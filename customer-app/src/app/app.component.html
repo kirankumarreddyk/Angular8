@@ -1,3 +1,6 @@
 
 <app-commonmenu></app-commonmenu>
 <router-outlet (activate)="onActivate($event)"></router-outlet>
+<button [ngClass]="{'show-scroll': showScroll}" (click)="scrollToTop()" class="scroll-to-top">
+    Scroll To Top
+  </button>

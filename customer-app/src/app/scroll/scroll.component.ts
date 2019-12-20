@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ScrollComponent implements OnInit {
 
   constructor() { }
-
+  moveToSpecificView(idtype: any) {
+    setTimeout(() => {
+      idtype.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+    });
+  }
   ngOnInit() {
   }
 
