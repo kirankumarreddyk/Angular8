@@ -1,0 +1,7 @@
+<h1>Collapse</h1>
+<!-- <button (click)= "togglecollapse()">Expand / Collapse</button>  -->
+<button *ngIf="iscollapsed" (click)= "togglecollapse()">Expand</button> 
+<button *ngIf="!iscollapsed" (click)= "togglecollapse()">Collapse</button> 
+<div *ngIf="!iscollapsed">
+  dfhbdfhdfhdfhdf
+</div>
